@@ -69,7 +69,7 @@ jobs:
           dockerfile: ./Dockerfile
           context: ./
 
-    deploytoEKS:
+  deploytoEKS:
       needs: build_and_publish
       runs-on: ubuntu-latest
       steps:
